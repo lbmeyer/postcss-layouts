@@ -23,11 +23,11 @@ gulp.task('styles', function() {
   ];
 
   return gulp.src(['./app/assets/styles/*.css', './app/assets/modules/**/*.scss'])
-    .pipe(sass())
+    // .pipe(sass())
     .pipe(postcss(plugins))
     .on('error', function(errorInfo) {
       console.log(errorInfo.toString());
       this.emit('end');
     })
-    .pipe(gulp.dest('./app/temp/styles')); 
+    .pipe(gulp.dest('./app/temp/styles'));
 });
