@@ -1,7 +1,7 @@
 {
-  "name": "starter-postcss-project",
+  "name": "postcss-layout",
   "version": "1.0.0",
-  "description": "Starter files for project using PostCSS and webpack",
+  "description": "Website using postcss and flexbox",
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.2.1",
