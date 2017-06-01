@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
 postcss = require('gulp-postcss'),
-sass = require('gulp-sass'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
@@ -8,7 +7,9 @@ cssImport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 hexrgba = require('postcss-hexrgba'),
 pxtorem = require('postcss-pxtorem'),
-extend = require('postcss-extend');
+extend = require('postcss-extend'),
+animation = require('postcss-animation'),
+colorFn = require('postcss-color-function');
 
 
 gulp.task('styles', function() {
@@ -19,6 +20,8 @@ gulp.task('styles', function() {
     nested,
     hexrgba,
     pxtorem,
+    animation,
+    colorFn,
     autoprefixer
   ];
 
